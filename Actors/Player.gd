@@ -23,7 +23,7 @@ func _process(delta):
 	#rotation = lerp_angle(rotation, _velocity.angle() + PI/2 - PI/2, 20.0 * delta)
 	look_at(get_global_mouse_position())
 	
-	if Input.is_action_pressed("Shoot") and can_fire:
+	if Input.is_action_just_pressed("Shoot") and can_fire:
 		var bullet_instance = bullet.instance()
 		bullet_instance.position = get_global_position()
 		bullet_instance.rotation_degrees = rotation_degrees
