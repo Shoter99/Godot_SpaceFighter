@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://MobileJoystick.gd" type="Script" id=1]
+[ext_resource path="res://joystick.png" type="Texture" id=2]
+[ext_resource path="res://fireBtn.png" type="Texture" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 13.0
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[node name="MobileJoystick" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="JoyStick" type="TouchScreenButton" parent="."]
+position = Vector2( 69, 382 )
+scale = Vector2( 4.59375, 4.59375 )
+normal = ExtResource( 2 )
+shape = SubResource( 1 )
+
+[node name="Fire" type="TouchScreenButton" parent="."]
+position = Vector2( 819, 382 )
+scale = Vector2( 4.03125, 4.03125 )
+normal = ExtResource( 3 )
+shape = SubResource( 2 )
