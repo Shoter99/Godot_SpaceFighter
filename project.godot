@@ -21,6 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Space Fighter"
+run/main_scene="res://TestLevel.tscn"
 config/icon="res://icon.png"
 
 [autoload]

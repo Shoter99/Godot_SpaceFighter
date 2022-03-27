@@ -15,7 +15,7 @@ func _process(delta):
 			var enemy_instance = enemy.instance()
 			var curr_pos = pos[randi() % pos.size()]
 			enemy_instance.position = curr_pos
-			get_tree().get_root().add_child(enemy_instance)
+			$"/root/Node2D".add_child(enemy_instance)
 			can_spawn = false
 			spawn_timer -= .01
 			yield(get_tree().create_timer(spawn_timer), "timeout")
