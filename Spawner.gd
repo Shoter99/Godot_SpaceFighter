@@ -17,7 +17,8 @@ func _process(delta):
 			warning_instance.position = curr_pos
 			$"/root/Node2D".add_child(warning_instance)
 			can_spawn = false
-			spawn_timer -= .05
+			if spawn_timer > 1.3:
+				spawn_timer -= .06
 			yield(get_tree().create_timer(spawn_timer/3), "timeout")
 			var enemy_instance = enemy.instance()
 			
