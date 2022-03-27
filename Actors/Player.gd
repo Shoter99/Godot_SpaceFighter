@@ -1,6 +1,6 @@
 extends Actor
 
-export var max_speed = 1000.0
+export var max_speed = 600.0
 export var drag = 4.0
 export var bullet_speed = 1000.0
 export var fire_rate = .2

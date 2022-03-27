@@ -10,7 +10,6 @@ height = 12.0
 [node name="Player" type="KinematicBody2D" groups=["player"]]
 collision_mask = 8
 script = ExtResource( 2 )
-max_speed = 600.0
 
 [node name="Sprite" type="Sprite" parent="."]
 rotation = 1.5708

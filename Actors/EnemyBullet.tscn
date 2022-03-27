@@ -1,15 +1,15 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://bullet.png" type="Texture" id=1]
-[ext_resource path="res://Actors/Bullet.gd" type="Script" id=2]
+[ext_resource path="res://Actors/EnemyBullet.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 2.0
 height = 2.0
 
-[node name="Bullet" type="RigidBody2D" groups=["bullet"]]
+[node name="EnemyBullet" type="RigidBody2D" groups=["bullet"]]
 collision_layer = 0
-collision_mask = 10
+collision_mask = 9
 mode = 2
 gravity_scale = 0.0
 contacts_reported = 1
@@ -24,4 +24,4 @@ shape = SubResource( 1 )
 scale = Vector2( 0.46875, 0.5 )
 texture = ExtResource( 1 )
 
-[connection signal="body_entered" from="." to="." method="_on_Bullet_body_entered"]
+[connection signal="body_entered" from="." to="." method="_on_EnemyBullet_body_entered"]

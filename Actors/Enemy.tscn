@@ -8,12 +8,13 @@ radius = 9.0
 height = 14.0
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 136.033
+radius = 215.021
 
 [node name="Enemy" type="KinematicBody2D" groups=["enemy"]]
 collision_layer = 2
 collision_mask = 9
 script = ExtResource( 2 )
+speed = 4000.0
 
 [node name="Sprite" type="Sprite" parent="."]
 rotation = 1.5708

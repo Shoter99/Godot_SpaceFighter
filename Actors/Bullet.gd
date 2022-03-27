@@ -23,3 +23,5 @@ func _on_Bullet_body_entered(body):
 		queue_free()
 	if body.is_in_group("enemy"):
 		body.queue_free()
+		Variables.current_points +=1
+		print(Variables.current_points)
